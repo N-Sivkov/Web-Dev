@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #left {
+                width: 51%;
+                float: left;
+                border-right: 3px solid lightgray;
+                padding: 2.5%;
+                height: 100%;
+            }
+            #right {
+                width: 38%;
+                float: right;
+                font-family: Arial;
+                padding: 2.5%;
+                margin-top: 3.47%;
+                height: 100%;
+            }
+            #right b {
+                letter-spacing: 1px;
+            }
+            #right h6 {
+                text-align: center;
+                font-size: 16px;
+                font-weight: 200;
+            }
+            #logo {
+                width: 10%;
+            }
+            #mockup {
+                width: 66%;
+            }
+            #left h1 {
+                text-align: center;
+                font-family: 'Trebuchet MS';
+                font-weight: 200;
+                font-size: 40px;
+                line-height: 150%;
+            }
+            #left span {
+                background: linear-gradient(90deg, #ff7a00, #ff0069);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            #bottom {
+                clear: both;
+                border-top: 1px solid lightgray;
+                font-size: 12px;
+            }
+            #bot-inf {
+                text-align: center;
+                padding: 20px;
+            }
+            #bot-inf p, #bot-inf a {
+                font-family: Arial;
+                text-decoration: none;
+                color: gray;
+                margin-right: 12px;
+            }
+            #bot-inf a:hover {
+                text-decoration: underline;
+            }
+            .input-container {
+                position: relative;
+                margin: 20px 0;
+            }
+            .input-container input {
+                padding: 12px;
+                padding-top: 22px;
+                border: 1px solid rgb(222, 222, 222);
+                border-radius: 15px;
+                margin-bottom: 7px; 
+                width: 92%;
+            }
+            .input-container label {
+                position: absolute;
+                top: 10px;
+                left: 12px;
+                color: #4d4d4e;
+                font-size: 16px;
+                transition: 0.2s ease all; 
+            }
+            .input-container input:focus + label, .input-container input:not(:placeholder-shown) + label {
+                top: 6px;
+                font-size: 12px;
+            }
+            button {
+                margin-top: 7px;
+                margin-bottom: 7px;
+                border-width: 0px;
+                border-radius: 22px;
+                width: 100%;
+                padding: 13px;
+                font-size: 15px;
+                cursor: pointer;
+            }
+            #login {
+                background-color: rgb(53, 100, 255);
+                color: white;
+            }
+            #login:hover {
+                background-color: rgb(56, 99, 244);
+            }
+            #forgot {
+                background-color: white;
+                color: black;
+            }
+            #forgot:hover, #facebook:hover, #newacc:hover {
+                background-color: rgb(247, 247, 247);
+            }
+            #facebook {
+                background-color: white;
+                color: black;
+                border: 1px solid lightgray;
+            }
+            #newacc {
+                background-color: white;
+                color: blue;
+                border: 1px solid blue;
+            }
+            #languages {
+                appearance: base-select;
+                border: none;
+            }
+            #languages:hover {
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="left">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968776.png" id="logo">
+            <h1>See everyday moments from your <br><span>close friends</span>.<br>
+            <img src="https://static.cdninstagram.com/rsrc.php/yJ/r/53X3pk-t2Gn.webp" id="mockup"></h1>
+        </div>
+        <div id="right">
+            <p><b>Log into Instagram</b></p>
+            <form>
+                <div class="input-container">
+                    <input type="text" name="email/phone" placeholder="">
+                    <label for="email/phone">Mobile number, username or email</label>
+                </div>
+                <div class="input-container">
+                    <input type="password" name="password" placeholder="">
+                    <label for="password">Password</label>
+                </div>
+                <button id="login" type="submit">Log in</button>
+                <button id="forgot" type="submit">Forgot password?</button>
+                <br><br><br>
+                <button id="facebook" type="submit">Log in with Facebook</button>
+                <button id="newacc" type="submit">Create new account</button>
+            </form>
+            <h6>Meta</h6>
+        </div>
+        <div id="bottom">
+            <div id="bot-inf">
+                <a href="">Meta</a> <a href="">About</a> <a href="">Blog</a> <a href="">Jobs</a> 
+                <a href="">Help</a> <a href="">API</a> <a href="">Privacy</a> <a href="">Terms</a> 
+                <a href="">Locations</a> <a href="">Instagram Lite</a> <a href="">Meta AI</a> 
+                <a href="">Threads</a> <a href="">Contact Uploading & Non-Users</a> <a href="">Meta Verified</a>
+                <br>
+                <p><select id="languages">
+                    <option value="eng">English</option>
+                    <option value="rus">Русский</option>
+                    <option value="kaz">Қазақша</option>
+                </select> © 2026 Instagram from Meta</p>
+            </div>
+        </div>
+    </body>
+</html>
