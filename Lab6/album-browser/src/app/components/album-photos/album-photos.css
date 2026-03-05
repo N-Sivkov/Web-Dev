@@ -1,0 +1,22 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+    gap: 10px;
+}
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+button {
+    outline: none;
+    background-color: rgb(171, 171, 171);
+    border: none;
+    font-size: 20px;
+    padding: 3px;
+    margin-left: 2.5%;
+}
+button:hover {
+    background-color: rgb(151, 151, 151);
+    cursor: pointer;
+}

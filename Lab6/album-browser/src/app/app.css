@@ -1,0 +1,20 @@
+div {
+    background-color: rgb(175, 175, 175);
+}
+nav {
+    display: flex;  
+    width: 50%;
+}
+nav a {
+    flex: 1;
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    text-align: center;
+}
+nav a:hover {
+    background-color: rgb(151, 151, 151);   
+}
+nav a.active {
+    color: rgb(98, 98, 212);
+}

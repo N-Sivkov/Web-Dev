@@ -1,0 +1,14 @@
+button {
+    outline: none;
+    background-color: rgb(171, 171, 171);
+    border: none;
+    font-size: 20px;
+    padding: 5px;
+}
+button:hover {
+    background-color: rgb(151, 151, 151);
+    cursor: pointer;
+}
+div {
+    margin-left: 2.5%;
+}

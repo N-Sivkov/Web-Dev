@@ -1,0 +1,26 @@
+li {
+    list-style: none;
+    background-color: lightgray;
+    width: 66%;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+li a {
+    color: rgb(64, 64, 64);
+    text-decoration: none;
+}
+li a:hover {
+    color: black;
+}
+button {
+    outline: none;
+    background-color: rgb(171, 171, 171);
+    border: none;
+    font-size: 20px;
+    padding: 3px;
+    margin-left: 5%;
+}
+button:hover {
+    background-color: rgb(151, 151, 151);
+    cursor: pointer;
+}
