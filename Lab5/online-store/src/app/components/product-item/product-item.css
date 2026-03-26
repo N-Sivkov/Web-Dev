@@ -1,0 +1,100 @@
+.product-card {
+    background-color: white;
+    padding: 3%;
+    border-radius: 15px;
+    text-align: center;
+    font-family: Arial;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+}
+.product-card p {
+    text-align: left;
+    font-size: 14px;
+}
+img {
+    width: 33%;
+}
+a {
+    text-decoration: none;
+    color: rgb(71, 157, 255)
+}
+.gray {
+    color: gray;
+}
+button {
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 3px;
+    background-color: rgb(222, 222, 222);
+    cursor: pointer;
+    height: 50%;
+    margin-top: 4.5%;
+}
+#like-button {
+    border: none;
+    background: none;
+    color: gray;
+    font-size: 20px;
+}
+#like-button.liked {
+    color: red;
+}
+#delete-button {
+    background-color: rgb(204, 0, 0);
+    color: rgb(58, 27, 27);
+}
+#delete-button:hover {
+    background-color: rgb(222, 0, 0);
+    color: rgb(202, 202, 202);
+}
+#share-button {
+    background-color: rgb(0, 56, 178);
+    color: white;
+}
+#share-button:hover {
+    background-color: rgb(0, 56, 212);
+}
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.stars-outer {
+    position: relative;
+    display: inline-block;
+    font-size: 22px;
+    color: gray;
+}
+.stars-outer::before {
+    content: "★★★★★";
+}
+.stars-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: gold;
+}
+.stars-inner::before {
+    content: "★★★★★";
+}
+.rating-value {
+    font-size: 14px;
+    color: rgb(82, 82, 82);
+}
+.button-div {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.central-div {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.price {
+    width: 100%;
+}

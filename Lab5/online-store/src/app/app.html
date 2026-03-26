@@ -1,0 +1,16 @@
+<div id="header">
+  <a (click)="clearCategory()"><img src="https://companieslogo.com/img/orig/KKS.F_BIG-3e3f7333.png?t=1720244492"></a>
+</div>
+<div id="categories">
+  @for (category of productService.categories; track category.id) {
+    <button (click)="selectCategory(category.id)" 
+    [class.active]="selectedCategoryId() === category.id">
+      {{ category.name }}
+    </button>
+  }
+</div>
+@if (selectedCategoryId() === null) {
+  <p>Please select a category</p>
+} @else {
+  <app-product-list [products]="selectedProducts()"></app-product-list>
+}

@@ -1,0 +1,11 @@
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  align-items: stretch;
+}
+p {
+    font-family: arial;
+    text-align: center;
+    padding: 1%;
+}
